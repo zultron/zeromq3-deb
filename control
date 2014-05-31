@@ -6,7 +6,8 @@ Build-Depends: debhelper (>= 9),
  dh-autoreconf,
  libpgm-dev,
  pkg-config,
- libsodium-dev
+ libsodium-dev,
+ python-support
 Standards-Version: 3.9.5
 Vcs-Browser: https://github.com/zultron/zeromq4-deb
 Vcs-Git: https://github.com/zultron/zeromq4-deb.git
