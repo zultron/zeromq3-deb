@@ -1,3 +1,11 @@
+zeromq4 (4.0.4-2) unstable; urgency=medium
+
+  * Fix confusing symbol versions
+    - The package name changed from libzmq3 to libzmq4
+    - Therefore there's no need to preserve older symbol versions
+
+ -- John Morris <john@zultron.com>  Thu, 18 Sep 2014 11:50:37 -0500
+
 zeromq4 (4.0.4-1) unstable; urgency=medium
 
   * Clone Debian packaging
