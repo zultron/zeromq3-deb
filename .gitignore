@@ -12,3 +12,9 @@
 /libzmq4.substvars
 /libzmq4/
 /tmp/
+
+# OSC
+/.osc/
+/zeromq4*.tar.gz
+/zeromq4*.dsc
+/zeromq4_*.debian.tar.xz
