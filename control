@@ -5,6 +5,7 @@ Maintainer: John Morris <john@zultron.com>
 Build-Depends: debhelper (>= 9),
  dh-autoreconf,
  pkg-config,
+ libpgm-dev,
  libsodium-dev,
  python-support
 Standards-Version: 3.9.5
