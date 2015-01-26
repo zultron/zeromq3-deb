@@ -1,3 +1,10 @@
+zeromq4 (4.0.5-3) unstable; urgency=medium
+
+  * Disable test_security_* unit tests
+    - Break in OBS
+
+ -- John Morris <john@zultron.com>  Mon, 26 Jan 2015 14:40:51 -0600
+
 zeromq4 (4.0.5-2) unstable; urgency=medium
 
   * Bump release for OBS build
