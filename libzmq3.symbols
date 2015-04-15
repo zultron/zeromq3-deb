@@ -1,4 +1,4 @@
-libzmq.so.3 libzmq4 #MINVER#
+libzmq.so.3 libzmq3 #MINVER#
  zmq_bind@Base 4.0.1+dfsg
  zmq_close@Base 4.0.1+dfsg
  zmq_connect@Base 4.0.1+dfsg

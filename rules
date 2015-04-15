@@ -21,7 +21,7 @@ endif
 endif
 
 override_dh_strip:
-	dh_strip --dbg-package=libzmq4-dbg
+	dh_strip --dbg-package=libzmq3-dbg
 
 %:
 	dh $@ --with=autoreconf
