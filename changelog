@@ -2,6 +2,8 @@ zeromq3 (4.0.5-1) unstable; urgency=medium
 
   * Demote to zeromq3
     - To match Debian/Ubuntu package
+  * Disable tests entirely when 'DEB_BUILD_OPTIONS=nocheck'
+    - Tests hang under qemu
 
  -- John Morris <john@zultron.com>  Tue, 14 Apr 2015 22:45:02 -0500
 
