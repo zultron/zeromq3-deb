@@ -1,16 +1,15 @@
 Source: zeromq3
 Section: libs
 Priority: optional
-Maintainer: John Morris <john@zultron.com>
+Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
 Build-Depends: debhelper (>= 9),
  dh-autoreconf,
- pkg-config,
  libpgm-dev,
  libsodium-dev,
- python-support
-Standards-Version: 3.9.5
-Vcs-Browser: https://github.com/zultron/zeromq3-deb
-Vcs-Git: https://github.com/zultron/zeromq3-deb.git
+ pkg-config
+Standards-Version: 3.9.6
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/zeromq3.git
+Vcs-Git: git://anonscm.debian.org/collab-maint/zeromq3.git
 Homepage: http://www.zeromq.org/
 
 Package: libzmq3
