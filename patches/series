@@ -1,2 +1,3 @@
 revert-soname-to-3.patch
+protocol-downgrade-attack.patch
 disable-test_security_curve.patch

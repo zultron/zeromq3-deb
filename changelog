@@ -1,3 +1,10 @@
+zeromq3 (4.0.5-2) unstable; urgency=low
+
+  * Back-port 'protocol downgrade attack' security fix
+    - https://github.com/zeromq/zeromq4-x/pull/101
+
+ -- John Morris <john@zultron.com>  Tue, 05 May 2015 13:57:49 -0500
+
 zeromq3 (4.0.5+dfsg-2) unstable; urgency=medium
 
   * Don't use test_security_curve to prevent FTBFS.
