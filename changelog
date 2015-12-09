@@ -1,3 +1,10 @@
+zeromq3 (4.0.5-4) unstable; urgency=medium
+
+  * Add `Replaces/Breaks/Conflicts: libzmq4`
+    - For seamless upgrade from `zeromq4` package
+
+ -- John Morris <john@zultron.com>  Wed, 09 Dec 2015 09:54:56 -0600
+
 zeromq3 (4.0.5-1) unstable; urgency=medium
 
   * Demote to zeromq3

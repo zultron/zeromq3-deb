@@ -17,6 +17,9 @@ Package: libzmq3
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Pre-Depends: ${misc:Pre-Depends}
+Conflicts: libzmq4 (<< 4.0.5)
+Breaks: libzmq4 (<< 4.0.5)
+Replaces: libzmq4 (<< 4.0.5)
 Multi-Arch: same
 Description: lightweight messaging kernel (shared library)
  ØMQ is a library which extends the standard socket interfaces with features
@@ -32,7 +35,9 @@ Package: libzmq3-dev
 Architecture: any
 Section: libdevel
 Depends: libzmq3 (= ${binary:Version}), ${misc:Depends}
-Conflicts: libzmq-dev
+Conflicts: libzmq-dev, libzmq4-dev (<< 4.0.5)
+Breaks: libzmq4-dev (<< 4.0.5)
+Replaces: libzmq4-dev (<< 4.0.5)
 Multi-Arch: same
 Description: lightweight messaging kernel (development files)
  ØMQ is a library which extends the standard socket interfaces with features
@@ -49,6 +54,9 @@ Architecture: any
 Priority: extra
 Section: debug
 Depends: libzmq3 (= ${binary:Version}), ${misc:Depends}
+Conflicts: libzmq4-dbg (<< 4.0.5)
+Breaks: libzmq4-dbg (<< 4.0.5)
+Replaces: libzmq4-dbg (<< 4.0.5)
 Multi-Arch: same
 Description: lightweight messaging kernel (debugging symbols)
  ØMQ is a library which extends the standard socket interfaces with features
@@ -59,3 +67,45 @@ Description: lightweight messaging kernel (debugging symbols)
  multiple transport protocols and more.
  .
  This package contains the debugging symbols for the ZeroMQ library.
+
+Package: libzmq4
+Architecture: any
+Depends: libzmq3 (>= 4.0.5)
+Description: Transitional package for migration to libzmq3
+  At the time the Dovetail Automata repo shipped packages for the
+  upstream zeromq v. 4 release, Debian Sid was shipping v. 3.x in the
+  'zeromq3' package.  Anticipating that Debian would ship a new
+  zeromq4 package for the upstream zeromq v. 4 release, the Dovetail
+  Automata repo did that.  However, Debian did not change the package
+  name, instead shipping a 'zeromq3' v. 4 package.  This package
+  follows https://wiki.debian.org/PackageTransition for renaming the
+  'zeromq4' package to 'zeromq3'.  It can be removed after some time
+  when users have updated to the newly-named package.
+
+Package: libzmq4-dev
+Architecture: any
+Depends: libzmq3-dev (>= 4.0.5)
+Description: Transitional package for migration to libzmq3-dev
+  At the time the Dovetail Automata repo shipped packages for the
+  upstream zeromq v. 4 release, Debian Sid was shipping v. 3.x in the
+  'zeromq3' package.  Anticipating that Debian would ship a new
+  zeromq4 package for the upstream zeromq v. 4 release, the Dovetail
+  Automata repo did that.  However, Debian did not change the package
+  name, instead shipping a 'zeromq3' v. 4 package.  This package
+  follows https://wiki.debian.org/PackageTransition for renaming the
+  'zeromq4' package to 'zeromq3'.  It can be removed after some time
+  when users have updated to the newly-named package.
+
+Package: libzmq4-dbg
+Architecture: any
+Depends: libzmq3-dbg (>= 4.0.5)
+Description: Transitional package for migration to libzmq3-dev
+  At the time the Dovetail Automata repo shipped packages for the
+  upstream zeromq v. 4 release, Debian Sid was shipping v. 3.x in the
+  'zeromq3' package.  Anticipating that Debian would ship a new
+  zeromq4 package for the upstream zeromq v. 4 release, the Dovetail
+  Automata repo did that.  However, Debian did not change the package
+  name, instead shipping a 'zeromq3' v. 4 package.  This package
+  follows https://wiki.debian.org/PackageTransition for renaming the
+  'zeromq4' package to 'zeromq3'.  It can be removed after some time
+  when users have updated to the newly-named package.
